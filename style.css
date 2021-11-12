@@ -1,0 +1,53 @@
+#exterior{
+    border: 10px rgb(0, 0, 0);
+    width: 700px;
+    height: 1000px;
+    margin: 0px auto;
+    padding: 50px;
+    background-color: rgb(231, 228, 228);
+text-align: center;  
+}
+
+#titulo{
+    border: 10px rgb(0, 0, 0);
+    width: 200px;
+    height: 70px;
+    margin: 0px auto;
+    padding: 50px;
+    background-color: rgb(231, 228, 228);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgb(175, 175, 175);
+}
+.titulo2{
+    border: 10px rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    padding: 50px;
+    background-color: rgb(231, 228, 228);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgb(175, 175, 175);
+text-align: center;
+}
+.titulo3{
+    border: 10px rgb(0, 0, 0);
+    width: 200px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 200px;
+    padding: 50px;
+    background-color: rgb(231, 228, 228);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgb(175, 175, 175);
+}
+
+#titulo4{
+    border: 10px rgb(0, 0, 0);
+    width: 200px;
+    height: 30px;
+    margin-top: -90px;
+    margin-left: 200px;
+    padding: 50px;
+    background-color: rgb(231, 228, 228);
+    box-shadow: 5px 5px 5px  rgb(175, 175, 175);
+}

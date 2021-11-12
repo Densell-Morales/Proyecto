@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head><!--se agrega los enlaces para el lenguaje de  css-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head><!--agregamos un fondo para la pagina web -->
+  <style>body {
+ background-color: rgb(250, 173, 79);
+}
+</style>
+
+<body>
+    <form ><!--empezamos agregando el formulario -->
+      <h1>Estación de servicio</h1><br><!--se agrego texto para el titulo y texto para especificar el precio de cada porducto -->
+      <h2>Precios</h2><br>
+   <h3>1=Regular:Q30.70<br>
+      2=Super:Q31.50<br>
+      3=Diesel:Q26.85</h3><br><br>
+      
+      <div>
+        <form action=""> <!--creacion de un formulario-->
+         Tipo de gasolina:<input id="eleccion" type="text"><br> <!--espacio donde ingresara la opción para realizar la condicion -->
+         <br>Galones:<input type="number" id="gal"><br>
+          <br><input type="button" value="seleccion" onclick="myFunction()" id="ñeñe"></input> <!--boton para ingresar a la opción seleccionada-->
+           <br><br>
+          <p id="demo"></p>
+        </form>
+    </div><br>
+      <br><br>
+      </form>
+    </form>
+    </body>
+    <script>  //opción donde empieza la condicion
+        function myFunction() { 
+     
+          var producto = document.getElementById("eleccion").value;
+        
+          switch(producto) { //condicion para revisar la opción ingresada y realizar la condicion 
+            case "1":
+                var resultado =parseInt(document.getElementById ("gal").value);
+                 var resultado1= (30.70*resultado);
+                alert("el resultado compra regular es: Q " +resultado1);
+            break;
+            case "2":
+            var resultado=parseInt(document.getElementById ("gal").value);
+                 var resultado1= (31.50*resultado);
+                alert("el resultado compra super es: Q " +resultado1);
+            break;
+            case "3":
+            var resultado=parseInt(document.getElementById ("gal").value);
+                 var resultado1= (26.85*resultado);
+                alert("el resultado diesel es: Q " +resultado1);
+            break;
+        
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+</html>
