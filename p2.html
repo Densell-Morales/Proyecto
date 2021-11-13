@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="repsol.png">
+  </head>
+  <style>body {
+background-color: rgb(255, 144, 9);
+}
+</style>
+<div class="hd"></div>
+
+<body>
+<form class="exterior" >
+  <h1 class="titulo">Estación de combustible repsol</h1><br>
+  <div class="titulo2">
+  <h2>Precios</h2><br>
+<h3> 1) Regular:Q30.70<br>
+  2) Super:Q31.50<br>
+  3) Diesel:Q26.85</h3><br><br>
+</div>
+      
+      <div>
+        <form  action=""> 
+       <div class="t1">
+          Tipo de gasolina:<input id="eleccion" type="text"><br><br> 
+         Galones:<input type="number" id="gls"><br><br>
+        <input type="button" value="Total de consumo" onclick="myFunction()" id="tt"></input> 
+           <br><br>
+          <p id="demo"></p>
+        </div>
+        </form>
+    </div><br><br><br>
+      
+      </form>
+    </form>
+    </body>
+    <script>  
+        function myFunction() { 
+     
+          var producto = document.getElementById("eleccion").value;
+        
+          switch(producto) { 
+            case "1":
+                var rs =parseInt(document.getElementById ("gls").value);
+                 var rs1= (30.70*rs);
+                alert("El total a pagar es de: Q " +rs1);
+            break;
+            case "2":
+            var resultado=parseInt(document.getElementById ("gls").value);
+                 var resultado1= (31.50*resultado);
+                alert("El total a pagar es de: Q " +resultado1);
+            break;
+            case "3":
+            var resultado=parseInt(document.getElementById ("gls").value);
+                 var resultado1= (26.85*resultado);
+                alert("El total a pagar es de: Q " +resultado1);
+            break;
+        
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+</html>

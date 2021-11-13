@@ -1,0 +1,70 @@
+<!--DENSELL ANDRES GUEVARA MORALES 0909-20-11193-->
+<!--SAMANTHA GABRIELA ESCOBAR AGUIRRE 0909-20-18371-->
+
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="repsol.png">
+    <link rel="" href="">
+  </head>
+  <style>body {
+    background-color: rgb(255, 144, 9);
+   }
+   </style>
+
+   <div class="hd"></div>
+ 
+  <body>
+    <form class="exterior" >
+      <h1 class="titulo">Estación de combustible repsol</h1><br>
+      <div class="titulo2">
+      <h2>Precios</h2><br>
+   <h3>Regular:Q30.70<br>
+      Super:Q31.50<br>
+      Diesel:Q26.85</h3><br><br>
+    </div>
+
+    <div class="titulo3">
+      <h4 >Metodo de pago</h4>
+      <h4>1:efectivo <br> 
+      2:tarjeta</h4> 
+    </div>
+      
+      <di>
+        <form action=""> 
+            <div id="titulo4">
+          <input id="pg" type="text"> <br>  <br>
+          <input type="button" value="seleccion" onclick="myFunction()" id="tt"></input> 
+           <br><br>
+          <p id="demo"></p>
+        </div>
+        </form>
+     </div><br>
+      <br><br>
+    </form>
+    </body>
+
+
+      <script>  
+        function myFunction() { 
+     
+          var producto = document.getElementById("pg").value;
+        
+          switch(producto) { 
+            case "1":
+            window.location="p2.html";
+            break;
+            case "2":
+            window.location="p3.html";
+            break;
+        
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+</html>
